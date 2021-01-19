@@ -2,4 +2,42 @@ body {
   font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+/* Navigation */
+
+nav ul {
+  font-family: Raleway, sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #3ac280;
+}
+
+/* Logo */
+nav .logo {
+  max-width: 217px;
+}
+
+nav .nav-item .nav-link button {
+  background: #3ac280 0 0 no-repeat padding-box;
+  border-color: #3ac280;
+  border-radius: 20px;
+  height: 30px;
+  padding: 5px 25px;
+  letter-spacing: 0;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 7%;
+  white-space: nowrap;
+  min-width: 20px;
 }
