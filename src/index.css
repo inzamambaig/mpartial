@@ -28,6 +28,13 @@ nav .logo {
   max-width: 217px;
 }
 
+nav {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.5);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+}
+
 nav .nav-item .nav-link button {
   background: #3ac280 0 0 no-repeat padding-box;
   border-color: #3ac280;
@@ -40,4 +47,78 @@ nav .nav-item .nav-link button {
   margin-left: 7%;
   white-space: nowrap;
   min-width: 20px;
+}
+
+/* Hero */
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .container .d-flex .w-100 .display-3 {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 45px;
+  color: #fff;
+}
+
+/* Animated Mouse */
+header .container .d-flex .w-100 .middle {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .container .d-flex .w-100 .middle .mouse {
+  width: 28px;
+  height: 42px;
+  border: 2px solid #000;
+  border-radius: 50px;
+}
+
+header .container .d-flex .w-100 .middle .mouse:hover {
+  border: 2px solid #3ac280;
+}
+
+header .container .d-flex .w-100 .middle .mouse::after {
+  content: "";
+  width: 2px;
+  height: 11px;
+  position: absolute;
+  top: 30px;
+  background: #3ac280;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+  margin: 0 auto;
+}
+
+@keyframes mouse {
+  from {
+    opacity: 1;
+    top: 10px;
+  }
+  to {
+    opacity: 0;
+    top: 40px;
+  }
 }
