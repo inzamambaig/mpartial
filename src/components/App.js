@@ -1,9 +1,9 @@
 import React from "react";
 import "../index.css";
-
+import Menu from "./Menu";
 class App extends React.Component {
   render() {
-    return <h1>Hello</h1>;
+    return <Menu />;
   }
 }
 
