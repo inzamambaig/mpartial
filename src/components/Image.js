@@ -54,38 +54,49 @@ const Image = () => {
   }, []);
 
   return (
-    <div className="container image-content">
-      <div className="row justify-content-md-center">
-        <div className="col">
-          <div className="wrapper">
-            <div className="before">
-              <img className="content-image" src={pre} draggable="false" />{" "}
-            </div>
-            <div className="after">
-              <img className="content-image" src={post} draggable="false" />
-            </div>
-            <div className="scroller" onMouseDown={scrolling}>
-              <svg
-                className="scroller__thumb"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="100"
-                viewBox="0 0 100 100"
-              >
-                <polygon
-                  points="0 50 37 68 37 32 0 50"
-                  style={{ fill: "#fff" }}
-                />
-                <polygon
-                  points="100 50 64 32 64 68 100 50"
-                  style={{ fill: "#fff" }}
-                />
-              </svg>
+    <>
+      <div className="container image-content">
+        <div className="row justify-content-md-center">
+          <div className="col">
+            <div className="wrapper">
+              <div className="before">
+                <img className="content-image" src={pre} draggable="false" />{" "}
+              </div>
+              <div className="after">
+                <img className="content-image" src={post} draggable="false" />
+              </div>
+              <div className="scroller" onMouseDown={scrolling}>
+                <svg
+                  className="scroller__thumb"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 100 100"
+                >
+                  <polygon
+                    points="0 50 37 68 37 32 0 50"
+                    style={{ fill: "#fff" }}
+                  />
+                  <polygon
+                    points="100 50 64 32 64 68 100 50"
+                    style={{ fill: "#fff" }}
+                  />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-4 call-to-action">
+            <a href="">
+              <button className="btn btn-primary ctn">Try Today</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

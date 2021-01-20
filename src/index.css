@@ -298,3 +298,29 @@ header .container .d-flex .w-100 .middle .mouse::after {
 .scroller:after {
   background: var(--appcolor);
 }
+
+/* Call to Action */
+
+.call-to-action {
+  padding: 10px;
+  text-align: center;
+}
+
+.call-to-action .ctn {
+  background: var(--appcolor) 0 0 no-repeat padding-box;
+  border-color: var(--appcolor);
+  border-radius: 20px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0;
+  color: #fff;
+  opacity: 1;
+  min-width: 159px;
+  height: 40px;
+  width: 159px;
+}
+
+.call-to-action .ctn:hover {
+  color: #000;
+}
