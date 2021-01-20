@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.png";
 
 const Menu = () => {
+  let listener = null;
+  const [scrollState, setScrollState] = useState("top");
+
+  useEffect(
+    function () {
+      listener = document.addEventListener("scroll", (e) => {
+        var scrolled = document.scrollingElement.scrollTop;
+        if (scrolled >= 120) {
+          if (scrollState !== "amir") {
+            setScrollState("amir");
+          }
+        } else {
+          if (scrollState !== "top") {
+            setScrollState("top");
+          }
+        }
+      });
+      return () => {
+        document.removeEventListener("scroll", listener);
+      };
+    },
+    [scrollState]
+  );
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <nav
+      className={
+        scrollState === "top"
+          ? "navbar navbar-expand-sm navbar-dark bg-transparent fixed-top"
+          : "navbar navbar-expand-sm fixed-top white-bg anchor"
+      }
+    >
       <div className="container">
         <a className="navbar-brand" href="#">
           <img src={logo} alt="" className="logo" />
@@ -17,7 +46,7 @@ const Menu = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span classNameName="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
         <div className="collapse navbar-collapse">
@@ -54,7 +83,7 @@ const Menu = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                <button type="button" class="btn btn-primary">
+                <button type="button" className="btn btn-primary">
                   Sign In
                 </button>
               </a>
@@ -65,4 +94,5 @@ const Menu = () => {
     </nav>
   );
 };
+
 export default Menu;

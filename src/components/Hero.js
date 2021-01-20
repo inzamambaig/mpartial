@@ -6,8 +6,8 @@ const Hero = () => {
       <div className="row">
         <header>
           <video
-            playsinline="playsinline"
-            autoplay="autoplay"
+            playsInline="playsinline"
+            autoPlay="autoplay"
             muted="muted"
             loop="loop"
           >

@@ -1,8 +1,46 @@
+/* Theme,Color,Fonts */
+:root {
+  --appcolor: #3ac280;
+  --text: "Raleway";
+  --headingfivehundred: "Museo Sans Rounded 500";
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Museo Sans Rounded 500";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Museo Sans Rounded 500"),
+    url("./assets/fonts/MuseoSansRounded500.woff") format("woff");
+}
+@font-face {
+  font-family: "Museo Sans Rounded 300";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Museo Sans Rounded 300"),
+    url("./assets/fonts/MuseoSansRounded300.woff") format("woff");
+}
+@font-face {
+  font-family: "Museo Sans Rounded 700";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Museo Sans Rounded 700"),
+    url("./assets/fonts/MuseoSansRounded700.woff") format("woff");
+}
+
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--text), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: var(--appcolor);
 }
 
 /* Navigation */
@@ -12,7 +50,7 @@ nav ul {
   font-size: 12px;
   line-height: 32px;
   font-weight: 400;
-  color: #fff;
+  color: #000;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -20,7 +58,11 @@ nav ul {
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: #3ac280;
+  color: var(--appcolor);
+}
+
+.white-bg {
+  background-color: #fff;
 }
 
 /* Logo */
@@ -36,8 +78,8 @@ nav {
 }
 
 nav .nav-item .nav-link button {
-  background: #3ac280 0 0 no-repeat padding-box;
-  border-color: #3ac280;
+  background: var(--appcolor) 0 0 no-repeat padding-box;
+  border-color: var(--appcolor);
   border-radius: 20px;
   height: 30px;
   padding: 5px 25px;
@@ -94,7 +136,8 @@ header .container .d-flex .w-100 .middle .mouse {
 }
 
 header .container .d-flex .w-100 .middle .mouse:hover {
-  border: 2px solid #3ac280;
+  border: 2px solid var(--appcolor);
+  cursor: pointer;
 }
 
 header .container .d-flex .w-100 .middle .mouse::after {
@@ -103,7 +146,7 @@ header .container .d-flex .w-100 .middle .mouse::after {
   height: 11px;
   position: absolute;
   top: 30px;
-  background: #3ac280;
+  background: var(--appcolor);
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
@@ -121,4 +164,39 @@ header .container .d-flex .w-100 .middle .mouse::after {
     opacity: 0;
     top: 40px;
   }
+}
+
+/* Info Section */
+
+.info-section {
+  padding-top: 15px;
+}
+.row .col-md .info-heading {
+  font-family: var(--headingfivehundred), sans-serif;
+  font-size: 45px;
+  line-height: 58px;
+  color: #000;
+  letter-spacing: 0;
+  background-image: url(assets/images/circle.png);
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  text-align: left;
+  padding-top: 21%;
+  padding-left: 17%;
+  background-position: 0 16px;
+}
+
+.row .col-md .info-content {
+  font-family: var(--text), sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  color: #000;
+  display: block;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.19px;
+  opacity: 1;
+  padding-top: 19%;
 }
