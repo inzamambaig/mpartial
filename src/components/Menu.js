@@ -10,8 +10,8 @@ const Menu = () => {
       listener = document.addEventListener("scroll", (e) => {
         var scrolled = document.scrollingElement.scrollTop;
         if (scrolled >= 120) {
-          if (scrollState !== "amir") {
-            setScrollState("amir");
+          if (scrollState !== "not-top") {
+            setScrollState("not-top");
           }
         } else {
           if (scrollState !== "top") {
@@ -29,8 +29,8 @@ const Menu = () => {
     <nav
       className={
         scrollState === "top"
-          ? "navbar navbar-expand-sm navbar-dark bg-transparent fixed-top"
-          : "navbar navbar-expand-sm fixed-top white-bg anchor"
+          ? "navbar navbar-expand-xl navbar-dark bg-transparent fixed-top"
+          : "navbar navbar-expand-xl fixed-top white-bg anchor"
       }
     >
       <div className="container">
@@ -40,8 +40,8 @@ const Menu = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#menu"
+          data-toggle="collapse"
+          data-target="#menu"
           aria-controls="menu"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -49,8 +49,8 @@ const Menu = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse">
-          <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
+        <div className="collapse navbar-collapse" id="menu">
+          <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">
                 Ground-Truth Data
