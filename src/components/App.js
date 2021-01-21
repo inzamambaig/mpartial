@@ -4,6 +4,7 @@ import Menu from "./Menu";
 import Hero from "./Hero";
 import Info from "./Info";
 import Image from "./Image";
+import Working from "./Working";
 class App extends React.Component {
   render() {
     return (
@@ -12,6 +13,7 @@ class App extends React.Component {
         <Hero />
         <Info />
         <Image />
+        <Working />
       </>
     );
   }

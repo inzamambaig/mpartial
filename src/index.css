@@ -3,6 +3,7 @@
   --appcolor: #3ac280;
   --text: "Raleway";
   --headingfivehundred: "Museo Sans Rounded 500";
+  --headingsevenhundred: "Museo Sans Rounded 700";
 }
 
 html {
@@ -210,6 +211,10 @@ header .container .d-flex .w-100 .middle .mouse::after {
 .container .image-content {
   margin-top: 50px;
 }
+
+.container .image-content .row.justify-content-md-center {
+  margin-left: 24px;
+}
 .wrapper {
   width: auto;
   min-height: 100vh;
@@ -319,8 +324,68 @@ header .container .d-flex .w-100 .middle .mouse::after {
   min-width: 159px;
   height: 40px;
   width: 159px;
+  margin-top: 40px;
 }
 
 .call-to-action .ctn:hover {
   color: #000;
+}
+
+/* Working */
+
+.working {
+  background-color: #f2f6f7;
+  padding-top: 70px;
+  margin-top: 40px;
+}
+
+.work-heading {
+  text-align: center;
+}
+
+.numbers {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.work-col {
+  padding: 0;
+}
+
+.working-heading {
+  padding: 12%;
+  font-family: var(--headingfivehundred);
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 58px;
+  color: #000;
+  letter-spacing: 0;
+  background-image: url(./assets/images/circle.png);
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.work-numbers {
+  text-align: left;
+  background-image: url(./assets/images/dot.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  font-family: var(--headingsevenhundred);
+  font-weight: 700;
+  font-size: 167px;
+  line-height: 87px;
+  letter-spacing: 0;
+  color: #0a5169;
+  opacity: 1;
+  min-height: 143px;
+}
+
+.work-text {
+  font-family: var(--text);
+  font-size: 12px;
+  color: #000;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
 }
