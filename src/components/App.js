@@ -5,6 +5,7 @@ import Hero from "./Hero";
 import Info from "./Info";
 import Image from "./Image";
 import Working from "./Working";
+import WaterFall from "./WaterFall";
 class App extends React.Component {
   render() {
     return (
@@ -14,6 +15,7 @@ class App extends React.Component {
         <Info />
         <Image />
         <Working />
+        <WaterFall />
       </>
     );
   }

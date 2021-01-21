@@ -337,6 +337,7 @@ header .container .d-flex .w-100 .middle .mouse::after {
   background-color: #f2f6f7;
   padding-top: 70px;
   margin-top: 40px;
+  padding-bottom: 70px;
 }
 
 .work-heading {
@@ -388,4 +389,162 @@ header .container .d-flex .w-100 .middle .mouse::after {
   font-weight: normal;
   padding: 0;
   margin: 0;
+}
+
+/* Slider */
+.work-slider {
+  text-align: center;
+}
+
+#custom-range {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #dff1eb;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 4px solid var(--appcolor);
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+.price-list {
+  list-style: none;
+}
+
+.price-list li {
+  text-align: center;
+  width: 1px;
+  height: 20px;
+  margin: 0px 0px 20px;
+  font-family: Gilroy;
+  color: rgb(132, 167, 179);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cost-text {
+  max-width: 620px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 14px;
+}
+
+.slider-text {
+  margin-top: 40px;
+}
+
+.estimated-price {
+  font-family: var(--text);
+  font-size: 19px;
+  font-weight: 200;
+  width: 180px;
+  height: 100px;
+  background-color: #dff1eb;
+  border-radius: 4px;
+  display: inline-block;
+  color: #0a5169;
+  padding-top: 7px;
+}
+
+.waterfall-price {
+  font-family: var(--headingfivehundred);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.cost-pill {
+  width: 195px;
+  height: 108px;
+  margin: 30px auto 15px;
+  padding: 25px 0;
+  text-align: center;
+  background: #0a5169;
+  border-radius: 10px;
+  position: relative;
+}
+
+.water-percent {
+  font-family: var(--headingfivehundred);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.water-fee {
+  font-family: var(--text);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+}
+
+.popup {
+  position: absolute;
+  right: 6%;
+  top: 5%;
+  font-size: 15px;
+  color: #fff;
+  font-style: normal;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 20px;
+  height: 20px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5px 5px;
+  font-size: 14px;
+  line-height: 21px;
+  position: absolute;
+  z-index: 1;
+}
+
+.popup:hover .popuptext {
+  visibility: visible;
+}
+
+.minimum-price {
+  font-family: var(--headingfivehundred);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0a5169;
+}
+
+.min {
+  text-align: center;
 }
