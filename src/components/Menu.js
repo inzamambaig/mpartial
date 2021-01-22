@@ -83,7 +83,13 @@ const Menu = () => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
-                <button type="button" className="btn btn-primary">
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  onClick={(e) => {
+                    e.preventDefault();
+                  }}
+                >
                   Sign In
                 </button>
               </a>

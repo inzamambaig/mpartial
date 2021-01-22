@@ -91,7 +91,14 @@ const Image = () => {
         <div className="row justify-content-center">
           <div className="col-4 call-to-action">
             <a href="">
-              <button className="btn btn-primary ctn">Try Today</button>
+              <button
+                className="btn btn-primary ctn"
+                onClick={(e) => {
+                  e.preventDefault();
+                }}
+              >
+                Try Today
+              </button>
             </a>
           </div>
         </div>

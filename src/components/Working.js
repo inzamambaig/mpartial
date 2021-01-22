@@ -56,7 +56,14 @@ const Working = () => {
       <div className="row justify-content-center">
         <div className="col-4 call-to-action">
           <a href="">
-            <button className="btn btn-primary ctn">Get Started</button>
+            <button
+              className="btn btn-primary ctn"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
+              Get Started
+            </button>
           </a>
         </div>
       </div>
