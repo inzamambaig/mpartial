@@ -5,12 +5,12 @@ const Info = () => {
     <div className="container-md">
       <div className="row info-section">
         <div className="col-md">
-          <h1 className="info-heading">
+          <h1 className="info-heading" id="info-one">
             GROUND-TRUTH<br></br> DATA EVERYONE<br></br> TRUSTS
           </h1>
         </div>
         <div className="col-md">
-          <p className="info-content">
+          <p className="info-content" id="info-two">
             We have combined the best-of-breed technology platforms with an eye
             towards relieving you of administrative burden. Matterport 3D scans
             augmented by TruePlan are used to generate consistent Xactimate

@@ -6,7 +6,9 @@ const Working = () => {
     <div className="container-fluid working">
       <div className="row justify-content-center">
         <div className="col-6 work-heading">
-          <h2 className="working-heading">How It Works</h2>
+          <h2 className="working-heading" id="work-one">
+            How It Works
+          </h2>
         </div>
       </div>
       {/* Numbers */}
@@ -54,7 +56,7 @@ const Working = () => {
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-4 call-to-action">
+        <div className="col-sm-4 call-to-action">
           <a href="">
             <button
               className="btn btn-primary ctn"

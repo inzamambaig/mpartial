@@ -20,13 +20,15 @@ class WaterFall extends React.Component {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-12 work-heading">
-            <h2 className="working-heading">Water Fall Fee Structure</h2>
+            <h2 className="working-heading" id="work-one">
+              Water Fall Fee Structure
+            </h2>
           </div>
         </div>
 
         <div className="row justify-content-center">
           <div className="col-md-12 work-slider">
-            <div class="estimated-price">
+            <div className="estimated-price">
               <span className="waterfall-price">${this.state.price}</span>
               <br></br>Estimated Grand Total
             </div>
@@ -87,9 +89,9 @@ class WaterFall extends React.Component {
 
         <div className="row justify-content-center">
           <div className="col-md-2 cost-pill">
-            <i class="popup">
+            <i className="popup">
               i
-              <span class="popuptext">
+              <span className="popuptext">
                 Fee Structure Example: An estimate grand total of $100k will
                 result in a fee of $7,360. The $750 deposit will be collected
                 upon submission and applied toward the overarching fee.

@@ -89,10 +89,10 @@ const Image = () => {
       </div>
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-4 call-to-action">
+          <div className="col-sm-4 call-to-action">
             <a href="">
               <button
-                className="btn btn-primary ctn"
+                className="btn btn-primary ctn ctn-one"
                 onClick={(e) => {
                   e.preventDefault();
                 }}

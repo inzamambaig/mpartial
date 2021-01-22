@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <header>
+        <header id="product-video">
           <video
             playsInline="playsinline"
             autoPlay="autoplay"

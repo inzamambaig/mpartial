@@ -45,13 +45,13 @@ class Form extends React.Component {
             onBlur={this.props.handleValidation}
           ></textarea>
         </div>
-        <div class="col-4 call-to-action">
+        <div className="col-sm-4 call-to-action">
           <a href="">
             <input
               type="submit"
               onChange={this.props.handleValidation}
               disabled={this.props.formfilled}
-              class="btn btn-primary ctn"
+              className="btn btn-primary ctn"
               id={this.props.formfilled ? "block" : "activate"}
               onClick={this.props.handleSubmit}
             />

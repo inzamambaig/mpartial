@@ -14,13 +14,15 @@ const ExampleDelivery = () => {
     <div className="container-fluid example-delivery">
       <div className="row justify-content-center">
         <div className="col-md-12 work-heading">
-          <h2 className="working-heading">Example Deliverables</h2>
+          <h2 className="working-heading" id="example-one">
+            Example Deliverables
+          </h2>
         </div>
       </div>
 
       <div className="row justify-content-center">
         <div className="col ">
-          <h3 className="example-heading">
+          <h3 className="example-heading" id="example-two">
             Pre-Mitigation Scan + Post-Mitigation Scan = ESX & SKX (TruePlan)
           </h3>
         </div>
@@ -32,9 +34,9 @@ const ExampleDelivery = () => {
               width="100%"
               height="480"
               src="https://my.matterport.com/show/?m=e5Wxtu8Arbx"
-              frameborder="0"
+              frameBorder="0"
               loading="lazy"
-              allowfullscreen=""
+              allowFullScreen=""
             ></iframe>
           </div>
           <div className="col-md-6">
@@ -42,9 +44,9 @@ const ExampleDelivery = () => {
               width="100%"
               height="480"
               src="https://my.matterport.com/show/?m=DhqzGgT7M1E"
-              frameborder="0"
+              frameBorder="0"
               loading="lazy"
-              allowfullscreen=""
+              allowFullScreen=""
             ></iframe>
           </div>
         </div>
@@ -55,7 +57,7 @@ const ExampleDelivery = () => {
         </div>
       </div>
       <div className="row justify-content-center carousel-images">
-        <div className="col-md-6">
+        <div className="col-md-6" id="carousel-col">
           <div
             id="carouselExampleIndicators"
             className="carousel slide"
@@ -143,11 +145,11 @@ const ExampleDelivery = () => {
                   width="30"
                   height="30"
                   fill="white"
-                  class="bi bi-arrow-left"
+                  className="bi bi-arrow-left"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
                   />
                 </svg>
@@ -166,11 +168,11 @@ const ExampleDelivery = () => {
                   width="30"
                   height="30"
                   fill="white"
-                  class="bi bi-arrow-right"
+                  className="bi bi-arrow-right"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
                   />
                 </svg>
@@ -190,7 +192,7 @@ const ExampleDelivery = () => {
         </div>
       </div>
       <div className="row justify-content-center">
-        <div className="col-md-5">
+        <div className="col-md-5" id="img-col">
           <img className="img-fluid building-image" src={buildingone} alt="" />
         </div>
         <div className="col-md-5">
