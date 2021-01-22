@@ -8,6 +8,7 @@ import Working from "./Working";
 import WaterFall from "./WaterFall";
 import ExampleDelivery from "./ExampleDelivery";
 import Contact from "./Contact";
+import Footer from "./Footer";
 class App extends React.Component {
   render() {
     return (
@@ -20,6 +21,7 @@ class App extends React.Component {
         <WaterFall />
         <ExampleDelivery />
         <Contact />
+        <Footer />
       </>
     );
   }

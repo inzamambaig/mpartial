@@ -53,7 +53,7 @@ class Contact extends React.Component {
   };
   render() {
     return (
-      <div className="container-fluid">
+      <div className="container-fluid form-section">
         <div className="row justify-content-center">
           <div className="col-md-12 work-heading">
             <h2 className="working-heading">Contact Us</h2>

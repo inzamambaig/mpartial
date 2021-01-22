@@ -627,6 +627,9 @@ a.crousel-heading:hover {
 }
 
 /* Form */
+.form-section {
+  margin-bottom: 35px;
+}
 legend {
   background-color: var(--appcolor);
   color: white;
@@ -645,4 +648,27 @@ input.form-control {
   border-color: #fcd4d4;
   background: #a6a6a6;
   cursor: not-allowed;
+}
+
+/* Footer Text */
+.footer {
+  background-color: #0a5169;
+  padding: 20px 0;
+}
+.footer-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fff;
+  margin: 0;
+  opacity: 0.5;
+}
+.social {
+  text-align: right;
+}
+
+.social svg {
+  width: auto;
+  margin: 0 15px;
+  opacity: 0.5;
 }
