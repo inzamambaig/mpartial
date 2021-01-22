@@ -555,6 +555,7 @@ header .container .d-flex .w-100 .middle .mouse::after {
 
 .example-delivery {
   background-color: #f2f6f7;
+  padding-bottom: 70px;
 }
 
 .example-heading {
@@ -623,4 +624,25 @@ a.crousel-heading:hover {
 
 .plan {
   margin-bottom: 20px;
+}
+
+/* Form */
+legend {
+  background-color: var(--appcolor);
+  color: white;
+  padding: 5px 10px;
+}
+
+textarea.message {
+  height: 174px;
+}
+
+input.form-control {
+  margin-bottom: 30px;
+}
+
+#block {
+  border-color: #fcd4d4;
+  background: #a6a6a6;
+  cursor: not-allowed;
 }

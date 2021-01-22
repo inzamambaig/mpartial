@@ -7,6 +7,7 @@ import Image from "./Image";
 import Working from "./Working";
 import WaterFall from "./WaterFall";
 import ExampleDelivery from "./ExampleDelivery";
+import Contact from "./Contact";
 class App extends React.Component {
   render() {
     return (
@@ -18,6 +19,7 @@ class App extends React.Component {
         <Working />
         <WaterFall />
         <ExampleDelivery />
+        <Contact />
       </>
     );
   }
