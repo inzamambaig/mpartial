@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import logo from "../assets/images/logo.png";
 
 const Menu = () => {
-  let listener = null;
   const [scrollState, setScrollState] = useState("top");
 
   useEffect(
     function () {
+      let listener = null;
       listener = document.addEventListener("scroll", (e) => {
         var scrolled = document.scrollingElement.scrollTop;
         if (scrolled >= 120) {
@@ -34,7 +34,7 @@ const Menu = () => {
       }
     >
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="!#">
           <img src={logo} alt="" className="logo" />
         </a>
         <button
@@ -52,37 +52,37 @@ const Menu = () => {
         <div className="collapse navbar-collapse" id="menu">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              <a className="nav-link" aria-current="page" href="!#">
                 Ground-Truth Data
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="!#">
                 How It Works
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="!#">
                 Fee Structure
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="!#">
                 Example Deliverables
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="!#">
                 Submission Portal
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="!#">
                 Contact Us
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="!#">
                 <button
                   type="button"
                   className="btn btn-primary"

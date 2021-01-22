@@ -20,7 +20,7 @@ const Working = () => {
                 <h2 className="work-numbers">1</h2>
               </div>
               <div className="col work-text">
-                <a href="">
+                <a href="!#">
                   Perform pre-mitigation and post-mitigation scans with a
                   Matterport Pro Series camera.
                 </a>
@@ -33,7 +33,7 @@ const Working = () => {
                 <h2 className="work-numbers">2</h2>
               </div>
               <div className="col work-text">
-                <a href="">
+                <a href="!#">
                   Submit the Matterport scans via the mpartial portal and then
                   go back to what you do great.
                 </a>
@@ -46,7 +46,7 @@ const Working = () => {
                 <h2 className="work-numbers">3</h2>
               </div>
               <div className="col work-text">
-                <a href="">
+                <a href="!#">
                   Receive a well-formatted, fully documented Xactimate PDF, ESX
                   & Matterport TruePlan SKX.
                 </a>
@@ -57,7 +57,7 @@ const Working = () => {
       </div>
       <div className="row justify-content-center">
         <div className="col-sm-4 call-to-action">
-          <a href="">
+          <a href="!#">
             <button
               className="btn btn-primary ctn"
               onClick={(e) => {

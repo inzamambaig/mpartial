@@ -186,7 +186,7 @@ const ExampleDelivery = () => {
       <div className="row justify-content-center plan">
         <div className="col ">
           <h3 className="example-heading">
-            <a href="" className="crousel-heading">
+            <a href="!#" className="crousel-heading">
               TruePlan [SKX]
             </a>
           </h3>

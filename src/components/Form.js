@@ -46,7 +46,7 @@ class Form extends React.Component {
           ></textarea>
         </div>
         <div className="col-sm-4 call-to-action">
-          <a href="">
+          <a href="!#">
             <input
               type="submit"
               onChange={this.props.handleValidation}

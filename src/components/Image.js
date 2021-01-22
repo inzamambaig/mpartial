@@ -100,7 +100,7 @@ const Image = () => {
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-sm-4 call-to-action">
-            <a href="">
+            <a href="!#">
               <button
                 className="btn btn-primary ctn ctn-one"
                 onClick={(e) => {
