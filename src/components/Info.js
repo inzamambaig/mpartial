@@ -10,6 +10,7 @@ const Info = () => {
           </h1>
         </div>
         <div className="col-md">
+          <span type="hidden" id="down"></span>
           <p className="info-content" id="info-two">
             We have combined the best-of-breed technology platforms with an eye
             towards relieving you of administrative burden. Matterport 3D scans

@@ -184,6 +184,10 @@ header .container .d-flex .w-100 .middle .mouse::after {
   }
 }
 
+#hide {
+  display: none;
+}
+
 /* Info Section */
 
 .info-section {

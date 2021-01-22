@@ -21,7 +21,9 @@ const Hero = () => {
                   Estimating Engine
                 </h1>
                 <div className="middle">
-                  <div className="mouse"></div>
+                  <div className="mouse">
+                    <a href="#down">&nbsp;</a>
+                  </div>
                 </div>
               </div>
             </div>
