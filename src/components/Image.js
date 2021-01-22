@@ -60,10 +60,20 @@ const Image = () => {
           <div className="col">
             <div className="wrapper">
               <div className="before">
-                <img className="content-image" src={pre} draggable="false" />{" "}
+                <img
+                  className="content-image"
+                  src={pre}
+                  draggable="false"
+                  alt="Before"
+                />{" "}
               </div>
               <div className="after">
-                <img className="content-image" src={post} draggable="false" />
+                <img
+                  className="content-image"
+                  src={post}
+                  draggable="false"
+                  alt="After"
+                />
               </div>
               <div className="scroller" onMouseDown={scrolling}>
                 <svg

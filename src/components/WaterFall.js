@@ -1,5 +1,4 @@
 import React from "react";
-import Slider from "react-rangeslider";
 class WaterFall extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +14,6 @@ class WaterFall extends React.Component {
   };
 
   render() {
-    const { value } = this.state;
     return (
       <div className="container">
         <div className="row justify-content-center">

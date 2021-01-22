@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
 import planone from "../assets/images/planone.jfif";
 import plantwo from "../assets/images/plantwo.jfif";
 import planthree from "../assets/images/planthree.jfif";
@@ -37,6 +36,7 @@ const ExampleDelivery = () => {
               frameBorder="0"
               loading="lazy"
               allowFullScreen=""
+              title="3d-showcase"
             ></iframe>
           </div>
           <div className="col-md-6">
@@ -47,6 +47,7 @@ const ExampleDelivery = () => {
               frameBorder="0"
               loading="lazy"
               allowFullScreen=""
+              title="3d-showcase"
             ></iframe>
           </div>
         </div>

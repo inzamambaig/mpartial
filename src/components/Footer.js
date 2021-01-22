@@ -10,6 +10,7 @@ const Footer = () => {
             <a
               href="https://www.google.com/maps/search/Gilgit/@35.9104512,74.3571456,13z"
               target="_blank"
+              rel="noreferrer"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
