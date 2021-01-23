@@ -6,7 +6,7 @@
 $ git clone https://github.com/inzamambaig/mpartial.git
 ```
 
-#### Change Directory mpartial folder and type
+#### Change Directory into mpartial folder and type
 
 ```bash
 $ npm install
