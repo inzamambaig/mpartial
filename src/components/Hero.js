@@ -8,6 +8,7 @@ const Hero = () => {
           <video
             playsInline="playsinline"
             autoPlay="autoplay"
+            preload="auto"
             muted="muted"
             loop="loop"
           >
