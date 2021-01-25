@@ -8,7 +8,7 @@ const WaterFall = () => {
     if (value >= 1e6 && value < 1e9) return +(value / 1e6).toFixed(1) + "M";
   };
   const [value, setValue] = useState(0);
-  const [toggle, setToggle] = useState(false);
+  const [toggle] = useState(false);
   return (
     <div className="container">
       <div className="row justify-content-center">
