@@ -1,5 +1,6 @@
 import React from "react";
 import homepage from "../assets/videos/homepage.mp4";
+import loading from "../assets/images/loading.png";
 const Hero = () => {
   return (
     <div className="container-fluid">
@@ -11,6 +12,7 @@ const Hero = () => {
             preload="auto"
             muted="muted"
             loop="loop"
+            poster={loading}
           >
             <source src={homepage} type="video/mp4" />
           </video>
